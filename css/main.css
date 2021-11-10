@@ -196,7 +196,15 @@ header .fa-arrow-circle-down {
 }
 
 .portfolio .carousel-item {
+  position: relative;
   height: 500px;
+}
+
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 375px) {
@@ -219,7 +227,7 @@ header .fa-arrow-circle-down {
 
 @media (min-width: 992px) {
   html {
-    scroll-padding-top: 72px;
+    height: 82px;
   }
   .aboutus-hero {
     background-image: url(../img/about-big.jpg);
