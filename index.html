@@ -16,7 +16,7 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82">
 
     <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-4 ">
         <div class="container">
@@ -27,7 +27,7 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#home">Home</a>
                     <a class="nav-link" href="#aboutus">o nas</a>
                     <a class="nav-link" href="#portfolio">portfolio</a>
                     <a class="nav-link" href="#prices">ceny</a>
@@ -40,7 +40,7 @@
     </nav>
 
 
-    <header>
+    <header id="home">
         <div class="hero-img">
             <div class="hero-shadow"></div>
             <div class="hero-text">
@@ -129,10 +129,32 @@
                     </div>
                 </div>
         </section>
-        <section id="portfolio" class="portfolio bg-light py-5">
+        <section id="portfolio" class="portfolio py-5">
             <h2>Portfolio</h2>
             <div class="underline"></div>
+            <div class="container pb-4">
+                <!-- portfolio na mobile -->
+                <div class="card-group d-lg-none ">
+                    <div class="card me-sm-3 ">
+                        <img src="img/car-lettering-1547641_1920.jpg" class="card-img-top" alt="lettering">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/gaming-2259191_1920.jpg" class="card-img-top" alt="gaming">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -173,6 +195,36 @@
             </div>
 
         </section>
+
+
+        <section id="prices" class="prices py-5 bg-light">
+            <h2>Portfolio</h2>
+            <div class="underline"></div>
+
+            <div class="container">
+                <div class="price-wrap">
+                    <div class="col-md-6 colxl-4">
+                        <div class="price-box">
+<h3 class="mobile">
+    <hr>
+    <p><span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i>
+
+    </p>
+    <p><span>Długość gry:</span></p>
+    <p><span></span></p>
+    <p><span></span></p>
+    <p class = 'price-tag'>4999</p>
+    <button class="btn btn-secondary">zamawiam</button>
+</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="height: 200vh;"></div>
     </main>
 
 

@@ -8,13 +8,13 @@
 }
 
 html {
-  scroll-padding-top: 98px;
+  scroll-padding-top: 82px;
 }
 
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  background-color: #444;
+  background-color: #ebecf2;
 }
 
 h2 {
@@ -25,7 +25,7 @@ h2 {
 .underline {
   margin: 0 auto 40px;
   width: 60px;
-  height: 5px;
+  height: 4px;
   background-color: #039dff;
 }
 
@@ -34,17 +34,14 @@ h2 {
 }
 
 .shadow-bg {
-  -webkit-transition: background-color 0.9s;
-  transition: background-color 0.9s;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
+  text-transform: uppercase;
   -webkit-transition: background-color 0.9s;
   transition: background-color 0.9s;
-  background-color: rgba(0, 0, 0, 0.9);
   z-index: 1;
-  text-transform: uppercase;
 }
 
 nav a,
@@ -58,10 +55,6 @@ nav a:hover {
 
 nav .fa-bars {
   padding: 10px;
-}
-
-nav .navbar-nav {
-  color: #fff;
 }
 
 nav .navbar-brand {
@@ -88,7 +81,7 @@ header p {
 header .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("../img/header-small.jpg");
+  background-image: url("../img/header-mini.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -129,17 +122,16 @@ header .btn-outline-light {
 
 header .fa-arrow-circle-down {
   position: absolute;
-  font-size: 40px;
-  bottom: 25px;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  left: 50%;
+  bottom: 20px;
+  font-size: 30px;
   color: #fff;
 }
 
 .aboutus i {
   margin-top: 20px;
-  margin-bottom: 10px;
   font-size: 30px;
 }
 
@@ -153,24 +145,22 @@ header .fa-arrow-circle-down {
 }
 
 .aboutus .aboutus-hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .aboutus .aboutus-hover:hover {
   color: #039dff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .aboutus-hero {
   position: relative;
-  background-image: url(../img/about-small.jpg);
+  background-image: url("../img/about-hero-small.jpg");
   background-position: center;
   background-size: cover;
-  color: #fff;
+  color: #ddd;
   z-index: 0;
 }
 
@@ -197,14 +187,19 @@ header .fa-arrow-circle-down {
 
 .portfolio .carousel-item {
   position: relative;
-  height: 500px;
+  height: 600px;
 }
 
 .portfolio .carousel-caption {
   position: absolute;
   left: 0;
   right: 0;
+  padding: 40px 0;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
 }
 
 @media (min-width: 375px) {
@@ -216,7 +211,7 @@ header .fa-arrow-circle-down {
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   header h1 {
     font-size: 42px;
   }
@@ -226,11 +221,11 @@ header .fa-arrow-circle-down {
 }
 
 @media (min-width: 992px) {
-  html {
+  nav {
     height: 82px;
   }
   .aboutus-hero {
-    background-image: url(../img/about-big.jpg);
+    background-image: url("../img/about-hero-big.jpg");
   }
 }
 
