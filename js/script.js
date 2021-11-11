@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		} else {
 			nav.classList.remove('shadow-bg')
 		}
-		console.log(addShadow)
 	}
 
 	navLink.forEach(item =>
